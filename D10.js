@@ -344,14 +344,18 @@ console.log(deleteProp(oggettoEs11,strEs11))
 
 
 
-/* ESERCIZIO 17
-  Scrivi una funzione chiamata "searchByTitle" che riceve una stringa come parametro e ritorna i film nell'array "movies" fornito che la contengono nel titolo.
-*/
+
 
 /* ESERCIZIO 18
-  Scrivi una funzione chiamata "searchAndDivide" che riceve una stringa come parametro e ritorna un oggetto contenente due array: "match" e "unmatch".
-  "match" deve includere tutti i film dell'array "movies" fornito che contengono la stringa fornita all'interno del proprio titolo, mentre "unmatch" deve includere tutti i rimanenti.
+  Scrivi una funzione chiamata "searchAndDivide" che riceve una stringa come parametro e 
+  ritorna un oggetto contenente due array: "match" e "unmatch".
+  "match" deve includere tutti i film dell'array "movies" fornito che contengono la 
+  stringa fornita all'interno del proprio titolo, mentre "unmatch" deve includere tutti i rimanenti.
 */
+
+
+
+
 
 /* ESERCIZIO 19
   Scrivi una funzione chiamata "removeIndex" che riceve un numero come 
@@ -529,7 +533,8 @@ aggiungiCss()
 */
 
 /* ESERCIZIO 29
-  Crea una funzione chiamata "isItPrime" che riceve un numero come parametro e ritorna true se il numero fornito è un numero primo.
+  Crea una funzione chiamata "isItPrime" che riceve un numero come parametro e 
+  ritorna true se il numero fornito è un numero primo.
 */
 
 /* Questo array viene usato per gli esercizi. Non modificarlo. */
@@ -731,3 +736,15 @@ console.log(onlyInLastMillennium(movies))
 */
 
 
+/* ESERCIZIO 17
+  Scrivi una funzione chiamata "searchByTitle" che riceve una stringa 
+  come parametro e ritorna i film nell'array "movies" fornito che la contengono nel titolo.
+*/
+
+function searchByTitle(str){
+  let search = movies.filter(ele => ele.Title.includes(str));
+  return search;
+}
+
+let trovaTitolo = searchByTitle('Salem');
+console.log(trovaTitolo)
